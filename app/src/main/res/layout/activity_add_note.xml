@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AddNoteActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_add"
+    android:padding="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textColor="#E11B1B"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            app:layout_constraintRight_toLeftOf="@id/txtDateNote"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtDateNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title: "
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/edt_Note_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title: "
+        android:textSize="24sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: "
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/edt_Note_Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description: "
+        android:textSize="24sp"
+        android:textColor="#000"/>
+    <Button
+        android:id="@+id/btnAdd_Note"
+        android:background="@drawable/background_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Note"
+        android:textSize="20sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"/>
+</LinearLayout>
